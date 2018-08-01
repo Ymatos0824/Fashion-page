@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+body {
+    font-family: times new roman;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align:"left";
+    background: white;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="header">
+  <h1 align="left">YAIRY</h1>
+ <h2 align="left"> Fashion, Inspiration Picture and Drawing...</h2>
+</div>
+
+<div class="topnav">
+  <a href="URLshome">Home</a>
+  <a href="URLsprojects">Projects</a>
+  <a href="URLsinspiration">Inspirations</a>
+  <a href="URLsdrawings">Drawings</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Projects</h2>
+      <h5>Fashion Tech Projects</h5>
+      <img src="pants2.jpg" width="600" > <img src="dress.JPG" width="400" height="500">
+      <p>Gallary walk at Boston Arts Academy </p>
+      <p>The best preparation for tomorrow is doing your best today. H. Jackson Brown, Jr.</p>
+    </div>
+    <div class="card">
+      <h2>Hobbies</h2>
+      <h5>Playing sports, watching TV, using social media, reading, hang out with friend, drawing, building things, and listening to musics.</h5>
+
+      <p>
+        Sports: Volleyball, soccer, softball, basketball.
+        <div>
+        </p>
+        <p>
+        TV shows: Gossip Girl, The 100, The Carrie Diary, and The Vampire Diary.
+      </div>
+      </p>
+      <p><p>
+        <div>
+          Books:
+          <a href="https://www.amazon.com/Looking-Alaska-John-Green/dp/0142402516"> Looking for Alaska</a>
+          by John Green,
+          <a href="https://www.amazon.com/Everything-Nicola-Yoon/dp/0553496670/ref=sr_1_1?s=books&ie=UTF8&qid=1532966800&sr=1-1&keywords=everything+everything+book
+      "> Everything Everything</a> by Nicola Yoon,
+          <a href="https://www.amazon.com/Hunger-Games-Book-1/dp/0439023521/ref=sr_1_1?s=books&ie=UTF8&qid=1532966929&sr=1-1&keywords=the+hunger+game&smid=ATVPDKIKX0DER" > The hunger game</a> by Suzanne Collins,
+          and <a href="https://www.amazon.com/Snitch-Allison-van-Diepen/dp/144248165X/ref=sr_1_3?s=books&ie=UTF8&qid=1532971404&sr=1-3&keywords=snitch"> Snitch</a> by Allison Van Diepen.
+        </div>
+        </p></p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="yairymatos.JPG" width="400">
+      <p>  I live in Boston, but I was born in the Dominican Republic. I'm still in high school, am currently studying Fashion Technology. I have participated in Boston Fashion Week, I'm hoping to learn more about fashion..</p>
+    </div>
+  
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color:lightblue;
+    color: black;
+}
+</style>
+</head>
+<body>
+
+</body>
+</html>
+
+
+<html style="font-size:200.5%">
+
+<style>
+   body {background-color: powderblue;}
+   h1 {color: red;}
+ </style>
+
+<style>
+  body {
+    background-color: lightblue;
+  }
+  </style>
+
+  <body>
+
+
+
+
+  </body>
+</html>
